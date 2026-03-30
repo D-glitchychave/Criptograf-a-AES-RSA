@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mensaje Descifrado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Resultado del Descifrado</h2>
+
+    <div class="decrypt-box">
+        <p><b>Mensaje original recuperado:</b></p>
+        <p class="message">{{ message }}</p>
+    </div>
+
+    <br>
+
+    <a href="/">
+        <button>Volver</button>
+    </a>
+
+</div>
+
+</body>
+</html>

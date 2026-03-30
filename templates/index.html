@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Criptografía AES + RSA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h2>Cifrado AES + RSA</h2>
+<p><b>(E3. Prototipo de Algoritmos Criptográficos)</b></p><br>
+
+<form method="post">
+    <label>Mensaje en claro:</label><br>
+    <input type="text" name="message">
+    <br>
+    <button type="submit">Cifrar</button>
+</form>
+
+{% if data %}
+<div class="result">
+    <h3>Resultados del cifrado:</h3>
+
+    <p><b>Mensaje cifrado (AES):</b><br> {{ data.ciphertext }}</p>
+    <p><b>Nonce:</b><br> {{ data.nonce }}</p>
+    <p><b>Tag:</b><br> {{ data.tag }}</p>
+
+    <p><b>Clave AES cifrada con RSA:</b><br> {{ data.encrypted_key }}</p>
+</div>
+
+<br>
+
+<a href="/decrypt">
+    <button>Descifrar mensaje</button>
+</a>
+{% endif %}
+
+</div>
+
+</body>
+</html>

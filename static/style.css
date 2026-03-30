@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f3ff;
+    color: #2c2c2c;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: white;
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #6a0dad;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #6a0dad;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #4b0082;
+}
+
+.result {
+    background: #ede9fe;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+b {
+    color: #4b0082;
+}
+
+.decrypt-box {
+    background: #f3e8ff;
+    border: 2px solid #6a0dad;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.message {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4b0082;
+    margin-top: 10px;
+}
